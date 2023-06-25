@@ -1,0 +1,627 @@
+.menu {
+    text-align: center;
+    background-color: #cbedf1;
+    color: #000000;
+}
+
+.menu_header {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 10px;
+    align-content: stretch;
+}
+
+.menu_header img {
+    max-width: 200px;
+    margin-right: 50px;
+    margin-top: 15px;
+    border-radius: 15%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5);
+}
+
+.menu_title {
+    margin: 0;
+    align-items: baseline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 10px;
+    font-size: 24px;
+    }
+
+.menu_list_item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    align-self: center;
+}
+
+.menu_list_item a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-style: double;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agregar sombra */
+}
+
+.menu_list_item:hover {
+    padding: 1;
+    margin: -0.1%;
+}
+
+@media (max-width: 475px) {
+    .menu_header img {
+        width: 250%;
+        margin-right: 5%;
+        margin-bottom: 5px;
+        border-radius: 15%;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5);
+    }
+    .menu_list_item:hover {
+        padding: 5px;
+        margin: 0.05%;
+    }
+
+    .menu_list {
+        justify-content: flex-start;
+    }
+    
+    .menu_list_item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        margin-inline: 10px;
+        text-align: center; /* Alinear al centro */
+        align-self: flex-start;
+    }
+}
+
+/* Parte de la foto */
+
+.title {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+.title_div {
+    display: flex;
+    flex-direction: row; /* Cambiar a fila */
+    align-items: flex-start; /* Alinear a la izquierda */
+}
+
+.title_profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    align-self: flex-end; /* Alinear a la derecha */
+    margin-right: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1.5);
+}
+
+.title_container {
+    text-align: center;
+    max-width: auto;
+    margin: auto auto;
+}
+
+.title_bio {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.title_subsection {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.title_network {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.title_network_item {
+    margin: 0 20px;
+}
+
+.title_network_item a {
+    text-decoration: none;
+    color: #333333;
+    display: flex;
+    align-items: center;
+}
+
+.title_network_item img {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 475px) {
+    .title_div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_profile {
+        margin: 0 auto;
+    }
+
+    .title_container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .title_bio {
+        font-size: 20px;
+    }
+
+    .title_subsection {
+        font-size: 16px;
+    }
+
+    .title_network_item {
+        margin: 5px;
+    }
+}
+
+/* Parte sobre mi */
+
+.about {
+    background-color: #f7e5f7;
+    padding: 20px;
+    color: #333333;
+}
+
+.about_container {
+    max-width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about_title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about_paragraph {
+    font-size: 22px;
+    margin-bottom: 16px;
+    margin-block: 25px;
+    text-align: justify;
+}
+
+.about_container img {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* parte de skills */
+
+.skills {
+    background-color: #d7ffc7;
+    padding: 10px;
+    color: #333333;
+}
+
+.skills_title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skills_line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills_item {
+    width: 100px;
+    margin: 10px;
+    border: 5px solid #4b774f;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.skills_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+}
+
+.skills_img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.skills_name {
+    font-size: 18px;
+}
+
+/* Estilos responsivos para 475px */
+@media (max-width: 475px) {
+    .skills_item {
+        flex-basis: 25%;
+    }
+}
+
+/* Estilos CSS para los hobbies */
+.hobbies {
+    margin: 20px 0;
+    text-align: center;
+    background-color: darkgrey;
+  }
+  
+  .hobbies_title {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  
+  .hobbies_line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+.hobbies_box {
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    border: 5px solid #cbedf1;
+    border-radius: 10%;
+  }
+  
+  .hobbies_box ul {
+    list-style: none;
+    padding: 0;
+}
+  
+  .hobbies_img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hobbies_name {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  /* Estilos responsivos para 475px */
+@media (max-width: 475px) {
+    .hobbies_title {
+    font-size: 20px;
+    }
+  
+.hobbies_box {
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    }
+  
+    .hobbies_name {
+    font-size: 14px;
+    }
+  }
+
+/* Estilos CSS para la formación académica */
+.academic {
+    margin: 20px 0;
+    text-align: center;
+    background-color: #F5F5DC; /* Fondo beige claro */
+    padding: 20px; /* Agregamos un espacio de relleno */
+  }
+  
+  .academic_title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .academic_courses {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .academic_courses_box {
+    width: 200px;
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    border-radius: 15%;
+  }
+  
+  .academic_courses_list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .academic_courses_item_img img {
+    width: 100%;
+    height: 100px;  /* Ajusta la altura deseada */
+    object-fit: contain; /* Para asegurarse de que la imagen se ajuste sin deformarse */
+  }
+  
+  .academic_courses_item_title {
+    font-size: 18px;
+    margin-top: 5px;
+    align-self: flex-start;
+  }
+  
+  .academic_courses_item_subtitle {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Estilos responsivos para 475px */
+  @media (max-width: 475px) {
+    .academic_title {
+      font-size: 20px;
+    }
+  
+    .academic_courses_box {
+      width: 150px;
+      margin: 5px;
+      padding: 5px;
+    }
+  
+    .academic_courses_item_title {
+      font-size: 16px;
+    }
+  
+    .academic_courses_item_subtitle {
+      font-size: 12px;
+    }
+  }
+
+/* Estilos CSS para la sección de experiencia profesional */
+.experience {
+    margin: 20px 0;
+    text-align: center;
+    background-color: #F5E6F8; /* Fondo con lila suave */
+    padding: 20px;
+  }
+  
+  .experience_section_title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .experience_box {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    margin-bottom: 20px;
+  }
+  
+  .experience_img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    margin-right: 30%;
+    margin-top: 30px;
+    margin: 20px;
+}
+  
+  .experience_info {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .experience_title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .experience_text {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .experience_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .experience_button--repo,
+  .experience_button--demo {
+    background-color: #333; /* Botones oscuros */
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    }
+  
+  /* Estilos responsivos para 475px */
+
+  @media (max-width: 475px) {
+    .experience_box {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .experience_img {
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+  
+    .experience_title {
+      font-size: 16px;
+    }
+  
+    .experience_text {
+      font-size: 12px;
+    }
+  
+    .experience_description {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .experience_button--repo,
+    .experience_button--demo {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+ /* Estilos generales para formulario */
+.formcontacto {
+  background-color: #eeedb1;
+  padding: 1rem;
+}
+
+.formcontacto_contacto {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.formcontacto--esquerda {
+  width: 45%;
+  margin: auto;
+  position: relative;
+}
+
+.formcontacto_img {
+  width: 80%;
+  margin: 10px;
+  display: block;
+}
+
+.formcontacto_text {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formcontacto_title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.formcontacto_subtext {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.3rem;
+}
+
+.formcontacto_form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formcontacto_input,
+.formcontacto_textarea {
+  padding: 1rem;
+  width: 85%;
+}
+
+.formcontacto_boton {
+  width: 25%;
+  padding: 0.8rem;
+  color: #000000;
+  background-color: #fff;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 475px) {
+  .formcontacto {
+    padding: 2rem;
+  }
+
+  .formcontacto_contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formcontacto--esquerda {
+    display: none;
+  }
+
+  .formcontacto_text {
+    width: 100%;
+  }
+
+  .formcontacto_boton {
+    width: 45%;
+  }
+}
+
+/*pie de pagina */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer_rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typing-text {
+  overflow: hidden;
+  font-size: 18px;
+  font-family: Georgia;
+  white-space: nowrap;
+  border-right: 0.15em solid white;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end ;
+  animation-fill-mode: forwards; /* Se mantiene el estado final de la animación */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
