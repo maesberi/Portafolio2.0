@@ -22,8 +22,8 @@
 
 .menu_title {
     margin: 0;
-    align-items: baseline;
-    font-size: 30px;
+    align-items: center;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -86,6 +86,9 @@
         text-align: center; /* Alinear al centro */
         align-self: flex-start;
     }
+    .menu_title {
+      margin-top: 5px; /* Ajuste del margen superior */
+  }
 }
 
 /* Parte de la foto */
@@ -584,7 +587,7 @@
 
 /*pie de pagina */
 
-footer {
+.footer {
   background-color: black;
   color: white;
   padding: 5px;
@@ -599,7 +602,7 @@ footer {
 
 .typing-text {
   overflow: hidden;
-  font-size: 18px;
+  font-size: 14px;
   font-family: Georgia;
   white-space: nowrap;
   border-right: 0.15em solid white;
@@ -623,5 +626,11 @@ footer {
   }
   50% {
     border-color: white;
+  }
+}
+
+@media (max-width: 475px) {
+  .footer {
+  font-size: 10px;
   }
 }
