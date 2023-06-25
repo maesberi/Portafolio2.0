@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .menu {
     text-align: center;
     background-color: #cbedf1;
@@ -223,6 +227,8 @@
     background-color: #d7ffc7;
     padding: 10px;
     color: #333333;
+    margin: 0;
+    margin-bottom: 0;
 }
 
 .skills_title {
@@ -272,9 +278,10 @@
 
 /* Estilos CSS para los hobbies */
 .hobbies {
-    margin: 20px 0;
+    margin: 0;
     text-align: center;
     background-color: darkgrey;
+    margin-top: 0;
   }
   
   .hobbies_title {
@@ -324,7 +331,7 @@
 .hobbies_box {
     width: 100px;
     margin: 5px;
-    padding: 10px;
+    padding: 5px;
     }
   
     .hobbies_name {
@@ -334,7 +341,7 @@
 
 /* Estilos CSS para la formación académica */
 .academic {
-    margin: 20px 0;
+    margin: 0 0;
     text-align: center;
     background-color: #F5F5DC; /* Fondo beige claro */
     padding: 20px; /* Agregamos un espacio de relleno */
@@ -382,9 +389,18 @@
   }
   
   /* Estilos responsivos para 475px */
-  @media (max-width: 475px) {
+  @media screen and (max-width: 475px) {
     .academic_title {
       font-size: 20px;
+    }
+
+    .academic_courses {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
     }
   
     .academic_courses_box {
@@ -404,7 +420,7 @@
 
 /* Estilos CSS para la sección de experiencia profesional */
 .experience {
-    margin: 20px 0;
+    margin: 0;
     text-align: center;
     background-color: #F5E6F8; /* Fondo con lila suave */
     padding: 20px;
@@ -456,7 +472,7 @@
   .experience_button--demo {
     background-color: #333; /* Botones oscuros */
     color: #FFF;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     border-radius: 5px;
     margin-right: 10px;
@@ -473,8 +489,9 @@
     }
   
     .experience_img {
-      margin-right: 15px;
+      margin-right: 10px;
       margin-bottom: 10px;
+      width: 100%;
     }
   
     .experience_title {
@@ -486,7 +503,6 @@
     }
   
     .experience_description {
-      flex-direction: column;
       align-items: flex-start;
     }
   
@@ -494,6 +510,7 @@
     .experience_button--demo {
       margin-right: 10px;
       margin-bottom: 10px;
+      padding: 10px 10px;
     }
   }
 
