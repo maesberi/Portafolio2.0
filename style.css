@@ -441,10 +441,10 @@ body {
     width: 60%;
     height: 60%;
     object-fit: cover;
-    margin-right: 30%;
-    margin-top: 30px;
+    margin-right: 10%;
+    margin-top: 20px;
     margin: 20px;
-}
+  }
   
   .experience_info {
     flex: 1;
@@ -472,12 +472,13 @@ body {
   .experience_button--demo {
     background-color: #333; /* Botones oscuros */
     color: #FFF;
-    padding: 10px 10px;
+    padding: 20px 20px;
     border: none;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
     justify-content: center;
     align-items: center;
+    margin-top: 25%;
     }
   
   /* Estilos responsivos para 475px */
@@ -508,9 +509,9 @@ body {
   
     .experience_button--repo,
     .experience_button--demo {
-      margin-right: 10px;
+      margin-right: 5px;
       margin-bottom: 10px;
-      padding: 10px 10px;
+      padding: 5px 5px;
     }
   }
 
